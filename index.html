@@ -12,6 +12,7 @@
 <nav>
   <a class="nav-logo" href="index.html">ES // ME</a>
   <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
@@ -20,41 +21,56 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero" style="min-height:100vh;display:flex;align-items:center;padding:0 3rem;overflow:hidden;">
-  <div style="max-width:900px;">
-    <p style="font-family:var(--mono);font-size:0.75rem;color:var(--accent);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:1.5rem;opacity:0;animation:fadeUp 0.6s ease forwards 0.2s;">// Mechanical Engineering Student</p>
-    <h1 style="font-size:clamp(3.5rem,9vw,8rem);font-weight:800;line-height:0.92;letter-spacing:-0.03em;margin-bottom:1.5rem;opacity:0;animation:fadeUp 0.6s ease forwards 0.4s;">
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="hero-kicker reveal">Mechanical Engineering Student</p>
+    <h1 class="hero-title reveal">
       Evan<br>
-      <span style="color:transparent;-webkit-text-stroke:1px rgba(232,197,71,0.5);">Stratemeyer</span>
+      <span class="hero-lastname">Stratemeyer</span>
     </h1>
-    <p style="font-size:1.1rem;color:var(--muted);max-width:460px;line-height:1.7;margin-bottom:2.5rem;opacity:0;animation:fadeUp 0.6s ease forwards 0.6s;">Boston University '28 · Building things that move, fly, and push tolerances to one thousandth of an inch.</p>
-    <div style="display:flex;gap:1rem;flex-wrap:wrap;opacity:0;animation:fadeUp 0.6s ease forwards 0.8s;">
+    <p class="hero-subtitle reveal">Boston University '28 · Building things that move, fly, and challenge my creativity.</p>
+    <div class="hero-actions reveal">
       <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      <a href="#contact" class="btn btn-secondary">Contact Me</a>
     </div>
   </div>
-  <div style="position:absolute;right:-2rem;top:50%;transform:translateY(-50%);font-size:32vw;font-weight:800;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,0.04);pointer-events:none;line-height:1;user-select:none;">ME</div>
+  <div class="hero-photo reveal">
+    <img class="hero-photo-img" src="assets/images/profile.jpg" alt="Photo of Evan Stratemeyer">
+  </div>
 </section>
 
-<!-- STATS -->
-<div class="stats-bar">
-  <div class="stat"><div class="stat-num">3.30</div><div class="stat-label">GPA · BU Engineering</div></div>
-  <div class="stat"><div class="stat-num">6+</div><div class="stat-label">Engineering Projects</div></div>
-  <div class="stat"><div class="stat-num">0.001″</div><div class="stat-label">Machining Precision</div></div>
-  <div class="stat"><div class="stat-num">120+</div><div class="stat-label">Volunteer Hours</div></div>
-</div>
+<!-- ABOUT -->
+<section id="about" class="section-surface">
+  <div class="section-header reveal">
+    <span class="section-num">01 //</span>
+    <h2 class="section-title">About</h2>
+  </div>
+
+  <div class="about-layout reveal">
+    <p class="about-lede">
+      I’m a mechanical engineering student at Boston University who loves designing, building, and iterating—especially when the work spans CAD, fabrication, and real-world testing.
+    </p>
+    <div class="about-details">
+      <p>
+        I’m most energized by projects where the constraints are real: tight tolerances, weight budgets, reliability, and clean integration between parts and systems. Lately, that’s meant aircraft subsystems, precision machining, and hands-on builds that push my craftsmanship.
+      </p>
+      <p class="about-callout">
+        I’m actively looking for internships and hands-on engineering opportunities where I can contribute quickly and learn even faster.
+      </p>
+    </div>
+  </div>
+</section>
 
 <!-- PROJECTS -->
 <section id="projects">
   <div class="section-header reveal">
-    <span class="section-num">01 //</span>
+    <span class="section-num">02 //</span>
     <h2 class="section-title">Projects</h2>
   </div>
 
   <div class="projects-grid">
 
-    <a href="projects/design-build-fly.html" class="project-card featured reveal">
-      <div class="project-highlight">Featured</div>
+    <a href="projects/design-build-fly.html" class="project-card reveal">
       <div class="project-icon">✈</div>
       <p class="project-date">Sep 2024 — Apr 2025</p>
       <h3 class="project-name">Design Build Fly · AIAA Competition</h3>
@@ -136,10 +152,87 @@
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+<!-- ON THE BENCH -->
+<section id="bench" class="section-surface">
   <div class="section-header reveal">
-    <span class="section-num">02 //</span>
+    <span class="section-num">03 //</span>
+    <h2 class="section-title">On the Bench</h2>
+  </div>
+
+  <div class="bench-grid">
+
+    <!-- GUITAR — active project -->
+    <div class="bench-card bench-card-wide reveal">
+      <div class="bench-label">Currently Active</div>
+      <h3 class="bench-title">Custom Electric Guitar</h3>
+      <p class="bench-text">Designing and building a fully custom electric guitar from raw materials — covering body routing, neck shaping, fretwork, electronics wiring, and final setup. Every system designed from scratch.</p>
+    </div>
+
+    <div class="bench-card reveal">
+      <div class="bench-subhead">Planned Skills</div>
+      <div class="bench-tags">
+        <span class="tag">Body Routing</span>
+        <span class="tag">Neck Shaping</span>
+        <span class="tag">Fretwork</span>
+        <span class="tag">Electronics</span>
+        <span class="tag">Soldering</span>
+        <span class="tag">Wood Fabrication</span>
+        <span class="tag">Finishing</span>
+      </div>
+    </div>
+
+    <div class="bench-card reveal">
+      <div class="bench-subhead">Status</div>
+      <div class="bench-status">
+        <div class="bench-status-row is-active">
+          <span class="bench-status-bullet">▸</span>
+          <span class="bench-status-step">Research & Design</span>
+          <span class="bench-status-state">Active</span>
+        </div>
+        <div class="bench-status-row">
+          <span class="bench-status-bullet">▸</span>
+          <span class="bench-status-step">Material Sourcing</span>
+          <span class="bench-status-state">Upcoming</span>
+        </div>
+        <div class="bench-status-row">
+          <span class="bench-status-bullet">▸</span>
+          <span class="bench-status-step">Body & Neck Build</span>
+          <span class="bench-status-state">Upcoming</span>
+        </div>
+        <div class="bench-status-row">
+          <span class="bench-status-bullet">▸</span>
+          <span class="bench-status-step">Electronics & Wiring</span>
+          <span class="bench-status-state">Upcoming</span>
+        </div>
+        <div class="bench-status-row">
+          <span class="bench-status-bullet">▸</span>
+          <span class="bench-status-step">Final Setup & Play</span>
+          <span class="bench-status-state">Upcoming</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROBOTIC ARM — on deck -->
+    <div class="bench-card bench-card-wide bench-card-divider reveal">
+      <div class="bench-label is-muted">On Deck</div>
+      <h3 class="bench-title is-muted">Robotic Arm</h3>
+      <p class="bench-text">Early-stage concept for a multi-axis robotic arm — exploring servo-driven joints, structural design, and programmatic control. Details to be defined as the project develops.</p>
+      <div class="bench-tags bench-tags-spaced">
+        <span class="tag">Servo Systems</span>
+        <span class="tag">Multi-Axis Design</span>
+        <span class="tag">CAD</span>
+        <span class="tag">Programming</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="section-surface">
+  <div class="section-header reveal">
+    <span class="section-num">04 //</span>
     <h2 class="section-title">Skills</h2>
   </div>
   <div class="skills-layout">
@@ -169,7 +262,7 @@
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-header reveal">
-    <span class="section-num">03 //</span>
+    <span class="section-num">05 //</span>
     <h2 class="section-title">Experience</h2>
   </div>
   <div class="exp-list reveal">
@@ -220,7 +313,7 @@
       <a href="mailto:evanstratemeyer@icloud.com" class="contact-link"><span class="contact-link-icon">✉</span>evanstratemeyer@icloud.com</a>
       <a href="tel:7816588872" class="contact-link"><span class="contact-link-icon">✆</span>781.658.8872</a>
       <a href="https://linkedin.com/in/evanstratemeyer" target="_blank" class="contact-link"><span class="contact-link-icon">in</span>linkedin.com/in/evanstratemeyer</a>
-      <div class="contact-link" style="cursor:default;"><span class="contact-link-icon">📍</span>Arlington, MA · Boston University '28</div>
+      <div class="contact-link contact-link-static"><span class="contact-link-icon">📍</span>Arlington, MA · Boston University '28</div>
     </div>
   </div>
 </section>
