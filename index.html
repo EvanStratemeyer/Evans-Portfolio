@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evan Stratemeyer — Mechanical Engineering</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">ES // ME</a>
+  <ul class="nav-links">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="min-height:100vh;display:flex;align-items:center;padding:0 3rem;overflow:hidden;">
+  <div style="max-width:900px;">
+    <p style="font-family:var(--mono);font-size:0.75rem;color:var(--accent);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:1.5rem;opacity:0;animation:fadeUp 0.6s ease forwards 0.2s;">// Mechanical Engineering Student</p>
+    <h1 style="font-size:clamp(3.5rem,9vw,8rem);font-weight:800;line-height:0.92;letter-spacing:-0.03em;margin-bottom:1.5rem;opacity:0;animation:fadeUp 0.6s ease forwards 0.4s;">
+      Evan<br>
+      <span style="color:transparent;-webkit-text-stroke:1px rgba(232,197,71,0.5);">Stratemeyer</span>
+    </h1>
+    <p style="font-size:1.1rem;color:var(--muted);max-width:460px;line-height:1.7;margin-bottom:2.5rem;opacity:0;animation:fadeUp 0.6s ease forwards 0.6s;">Boston University '28 · Building things that move, fly, and push tolerances to one thousandth of an inch.</p>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;opacity:0;animation:fadeUp 0.6s ease forwards 0.8s;">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+    </div>
+  </div>
+  <div style="position:absolute;right:-2rem;top:50%;transform:translateY(-50%);font-size:32vw;font-weight:800;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,0.04);pointer-events:none;line-height:1;user-select:none;">ME</div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat"><div class="stat-num">3.30</div><div class="stat-label">GPA · BU Engineering</div></div>
+  <div class="stat"><div class="stat-num">6+</div><div class="stat-label">Engineering Projects</div></div>
+  <div class="stat"><div class="stat-num">0.001″</div><div class="stat-label">Machining Precision</div></div>
+  <div class="stat"><div class="stat-num">120+</div><div class="stat-label">Volunteer Hours</div></div>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-num">01 //</span>
+    <h2 class="section-title">Projects</h2>
+  </div>
+
+  <div class="projects-grid">
+
+    <a href="projects/design-build-fly.html" class="project-card featured reveal">
+      <div class="project-highlight">Featured</div>
+      <div class="project-icon">✈</div>
+      <p class="project-date">Sep 2024 — Apr 2025</p>
+      <h3 class="project-name">Design Build Fly · AIAA Competition</h3>
+      <p class="project-desc">Designed battery housing and a latch mechanism mount for an autonomous drone, and assembled 3D-printed carbon-fiber-reinforced wings with active servo flap control.</p>
+      <div class="project-tags">
+        <span class="tag">Onshape CAD</span>
+        <span class="tag">3D Printing</span>
+        <span class="tag">Carbon Fiber</span>
+        <span class="tag">Servo Systems</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </a>
+
+    <a href="projects/tap-holder.html" class="project-card reveal">
+      <div class="project-icon">⚙</div>
+      <p class="project-date">Jan 2025 — Apr 2025</p>
+      <h3 class="project-name">Machined Tap Holder</h3>
+      <p class="project-desc">Manufactured a precision tap holder from raw metal stock, achieving tolerances of ±0.001″ across all milling, threading, and lathe operations.</p>
+      <div class="project-tags">
+        <span class="tag">Milling</span>
+        <span class="tag">Lathe</span>
+        <span class="tag">Precision Mfg.</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </a>
+
+    <a href="projects/go-kart.html" class="project-card reveal">
+      <div class="project-icon">🏎</div>
+      <p class="project-date">Sep 2023 — Apr 2024</p>
+      <h3 class="project-name">Go-Kart · Personal Project</h3>
+      <p class="project-desc">Led a two-person team to design and build a go-kart capable of 30 mph under 200 lbs, modeling all major systems in Onshape within a $1,000 budget.</p>
+      <div class="project-tags">
+        <span class="tag">Onshape</span>
+        <span class="tag">Systems Design</span>
+        <span class="tag">Fabrication</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </a>
+
+    <a href="projects/fpv-drone.html" class="project-card reveal">
+      <div class="project-icon">🚁</div>
+      <p class="project-date">Nov 2022 — Jun 2023</p>
+      <h3 class="project-name">FPV Drone Program · Co-Leader</h3>
+      <p class="project-desc">Designed 3+ micro-drone templates and self-taught soldering to build a 5-inch propeller FPV racing drone from scratch.</p>
+      <div class="project-tags">
+        <span class="tag">FPV Systems</span>
+        <span class="tag">Soldering</span>
+        <span class="tag">Drone Design</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </a>
+
+    <a href="projects/rubiks-cube.html" class="project-card reveal">
+      <div class="project-icon">◼</div>
+      <p class="project-date">Sep 2022 — Apr 2023</p>
+      <h3 class="project-name">Rubik's Cube · CAD Study</h3>
+      <p class="project-desc">Modeled all four core components of a functional Rubik's cube in Onshape and iterated through multiple 3D-printed prototypes to refine connection geometry.</p>
+      <div class="project-tags">
+        <span class="tag">Onshape</span>
+        <span class="tag">Assembly Design</span>
+        <span class="tag">3D Printing</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </a>
+
+    <a href="projects/additional.html" class="project-card reveal">
+      <div class="project-icon">+</div>
+      <p class="project-date">Various</p>
+      <h3 class="project-name">Additional Projects</h3>
+      <p class="project-desc">Truss Analysis Program, Balloon Propulsion Car, Marble Run, and Board Game — spanning structural computation, thermodynamics, and product fabrication.</p>
+      <div class="project-tags">
+        <span class="tag">Python</span>
+        <span class="tag">MATLAB</span>
+        <span class="tag">Structural Analysis</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="section-header reveal">
+    <span class="section-num">02 //</span>
+    <h2 class="section-title">Skills</h2>
+  </div>
+  <div class="skills-layout">
+    <div class="reveal">
+      <p class="skill-category-title">CAD & Software</p>
+      <div class="skill-list">
+        <div class="skill-item"><span class="skill-name">Onshape</span><div class="skill-bar-bg"><div class="skill-bar-fill" style="--fill:92%"></div></div></div>
+        <div class="skill-item"><span class="skill-name">SolidWorks</span><div class="skill-bar-bg"><div class="skill-bar-fill" style="--fill:80%"></div></div></div>
+        <div class="skill-item"><span class="skill-name">AutoCAD</span><div class="skill-bar-bg"><div class="skill-bar-fill" style="--fill:75%"></div></div></div>
+        <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar-bg"><div class="skill-bar-fill" style="--fill:68%"></div></div></div>
+        <div class="skill-item"><span class="skill-name">MATLAB</span><div class="skill-bar-bg"><div class="skill-bar-fill" style="--fill:60%"></div></div></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <p class="skill-category-title">Manufacturing & Fabrication</p>
+      <div class="skill-list">
+        <div class="skill-item"><span class="skill-name">3D Printing</span><div class="skill-bar-bg"><div class="skill-bar-fill" style="--fill:90%"></div></div></div>
+        <div class="skill-item"><span class="skill-name">Precision Mfg.</span><div class="skill-bar-bg"><div class="skill-bar-fill" style="--fill:85%"></div></div></div>
+        <div class="skill-item"><span class="skill-name">MIG Welding</span><div class="skill-bar-bg"><div class="skill-bar-fill" style="--fill:72%"></div></div></div>
+        <div class="skill-item"><span class="skill-name">Laser Cutting</span><div class="skill-bar-bg"><div class="skill-bar-fill" style="--fill:78%"></div></div></div>
+        <div class="skill-item"><span class="skill-name">Soldering</span><div class="skill-bar-bg"><div class="skill-bar-fill" style="--fill:80%"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-header reveal">
+    <span class="section-num">03 //</span>
+    <h2 class="section-title">Experience</h2>
+  </div>
+  <div class="exp-list reveal">
+    <div class="exp-item">
+      <div class="exp-date">Sep 2023 — May 2024</div>
+      <div>
+        <p class="exp-role">Senior CAD Instructor</p>
+        <p class="exp-org">High School Engineering Program</p>
+        <p class="exp-desc">Co-led a team of 8 seniors across 5 classes, preparing curriculum and supporting projects. Managed 3+ 3D printers and ran competitive events including a CO₂ car race and design-build challenge.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-date">Dec 2021 — Present</div>
+      <div>
+        <p class="exp-role">Head Ski Instructor</p>
+        <p class="exp-org">Quechee Ski School</p>
+        <p class="exp-desc">Taught private and group ski lessons to children ages 3–14, adapting instruction to a wide range of ability levels.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-date">Jun 2020 — Present</div>
+      <div>
+        <p class="exp-role">Tennis & Golf Coach</p>
+        <p class="exp-org">The Quechee Club</p>
+        <p class="exp-desc">Coached junior golf and tennis programs, managing 10+ private lesson clients per summer through word-of-mouth referrals.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-date">Jul 2022 — Aug 2023</div>
+      <div>
+        <p class="exp-role">Leader in Training</p>
+        <p class="exp-org">Vermont Institute of Natural Science</p>
+        <p class="exp-desc">Volunteered 120+ hours over two summers running lessons and managing camp groups during live wildlife demonstrations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="contact-grid">
+    <div class="reveal">
+      <h2 class="contact-headline">Let's build<br><span>something</span><br>great.</h2>
+      <p class="contact-body">Open to internships, research positions, and collaborative projects in mechanical engineering, robotics, or manufacturing. Based in Boston, MA.</p>
+      <a href="mailto:evanstratemeyer@icloud.com" class="btn btn-primary">Send an Email →</a>
+    </div>
+    <div class="contact-links reveal">
+      <a href="mailto:evanstratemeyer@icloud.com" class="contact-link"><span class="contact-link-icon">✉</span>evanstratemeyer@icloud.com</a>
+      <a href="tel:7816588872" class="contact-link"><span class="contact-link-icon">✆</span>781.658.8872</a>
+      <a href="https://linkedin.com/in/evanstratemeyer" target="_blank" class="contact-link"><span class="contact-link-icon">in</span>linkedin.com/in/evanstratemeyer</a>
+      <div class="contact-link" style="cursor:default;"><span class="contact-link-icon">📍</span>Arlington, MA · Boston University '28</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Evan Stratemeyer · Mechanical Engineering</p>
+  <p>Boston University · College of Engineering</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
