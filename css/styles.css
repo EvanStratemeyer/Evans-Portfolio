@@ -1124,3 +1124,9 @@ footer p {
     min-height: 520px;
   }
 }
+
+@media (max-width: 768px) {
+  .project-hero {
+    grid-template-columns: 1fr !important;
+  }
+}

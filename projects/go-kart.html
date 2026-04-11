@@ -1,113 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Go-Kart — Evan Stratemeyer</title>
-  <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go-Kart — Evan Stratemeyer</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a class="nav-logo" href="../index.html">Evan Stratemeyer</a>
+      <ul class="nav-links">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#aboutme">About Me</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#experience">Experience</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-<nav>
-  <a class="nav-logo" href="../index.html">Evan Stratemeyer</a>
-  <ul class="nav-links">
-    <li><a href="../index.html#home">Home</a></li>
-    <li><a href="../index.html#aboutme">About Me</a></li>
-    <li><a href="../index.html#projects">Projects</a></li>
-    <li><a href="../index.html#experience">Experience</a></li>
-    <li><a href="../resume.html">Resume</a></li>
-    <li><a href="../index.html#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<div class="project-hero">
-  <div class="project-hero-content">
-    <a href="../index.html#projects" class="back-link">← Back to Projects</a>
-    <div class="project-hero-meta">
-      <span class="project-hero-date">Sep 2023 — Apr 2024</span>
-      <span class="tag">Personal Project</span>
-    </div>
-    <h1 class="project-hero-title">Go-Kart</h1>
-    <p class="project-hero-subtitle">Designed and built a functional go-kart capable of 30 mph, keeping total weight under 200 lbs and total cost under $1,000.</p>
-  </div>
-</div>
-
-<div class="project-body">
-  <div class="project-main">
-
-    <div class="highlight-box">
-      <p>🏎 &nbsp; 30 mph top speed · Under 200 lbs · Under $1,000 budget · Sourced from 5+ suppliers — all targets hit.</p>
-    </div>
-
-    <p class="project-section-title">Overview</p>
-    <div class="project-text">
-      <p>This personal project was a full-system mechanical engineering challenge: design, model, source, and build a working go-kart with real performance targets and a hard budget constraint. Led a team of two from concept to completion over the course of the school year.</p>
-    </div>
-
-    <p class="project-section-title">Design & Modeling</p>
-    <div class="project-text">
-      <p>Modeled the entire kart in Onshape, including the tubular steel frame, steering assembly, and drive system. Modeling all systems in a single CAD environment allowed early detection of interference and clearance issues before any material was purchased or cut.</p>
-      <p>The frame design balanced torsional rigidity against weight, while the steering geometry was laid out to provide appropriate Ackermann correction for smooth low-speed cornering.</p>
-    </div>
-
-    <p class="project-section-title">Sourcing & Budget</p>
-    <div class="project-text">
-      <p>Sourced components and raw materials from more than five different suppliers to hit the $1,000 budget target. This required comparing vendors, evaluating lead times, and making trade-off decisions between cost and quality on each subsystem — a real-world engineering constraint that shaped many design decisions.</p>
-    </div>
-
-    <p class="project-section-title">Build & Testing</p>
-    <div class="project-text">
-      <p>Fabricated and assembled the kart, iterating on fit and clearance as parts arrived. Final testing confirmed the 30 mph performance target and verified all structural connections under load.</p>
+    <div
+      class="project-hero"
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+      "
+    >
+      <div class="project-hero-content">
+        <a href="../index.html#projects" class="back-link"
+          >← Back to Projects</a
+        >
+        <div class="project-hero-meta">
+          <span class="project-hero-date">Sep 2023 — Apr 2024</span>
+          <span class="tag">Personal Project</span>
+        </div>
+        <h1 class="project-hero-title">Go-Kart</h1>
+        <p class="project-hero-subtitle">
+          Designed and built a functional go-kart capable of 30 mph, keeping
+          total weight under 200 lbs and total cost under $1,000.
+        </p>
+      </div>
+      <div style="position: relative; z-index: 1">
+        <img
+          src="../assets/images/go-kart/1.jpg"
+          alt="Completed Go-Kart"
+          style="
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            border: 1px solid var(--border);
+          "
+        />
+      </div>
     </div>
 
-    <div class="photo-placeholder">
-      <span class="photo-icon">📷</span>
-      <span>Add your photo here — assets/images/go-kart-1.jpg</span>
+    <div class="project-body">
+      <div class="project-main">
+        <div class="highlight-box">
+          <p>
+            🏎 &nbsp; 30 mph top speed · Under 200 lbs · Under $1,000 budget ·
+            Sourced from 5+ suppliers — all targets hit.
+          </p>
+        </div>
+
+        <p class="project-section-title">Overview</p>
+        <div class="project-text">
+          <p>
+            This personal project was a full-system mechanical engineering
+            challenge: design, model, source, and build a working go-kart with
+            real performance targets and a hard budget constraint. Led a team of
+            two from concept to completion over the course of the school year.
+          </p>
+        </div>
+
+        <p class="project-section-title">Design & Modeling</p>
+        <div class="project-text">
+          <p>
+            Modeled the entire kart in Onshape, including the tubular steel
+            frame, steering assembly, and drive system. Modeling all systems in
+            a single CAD environment allowed early detection of interference and
+            clearance issues before any material was purchased or cut.
+          </p>
+          <p>
+            The frame design balanced torsional rigidity against weight, while
+            the steering geometry was laid out to provide appropriate Ackermann
+            correction for smooth low-speed cornering.
+          </p>
+        </div>
+
+        <p class="project-section-title">Sourcing & Budget</p>
+        <div class="project-text">
+          <p>
+            Sourced components and raw materials from more than five different
+            suppliers to hit the $1,000 budget target. This required comparing
+            vendors, evaluating lead times, and making trade-off decisions
+            between cost and quality on each subsystem — a real-world
+            engineering constraint that shaped many design decisions.
+          </p>
+        </div>
+
+        <p class="project-section-title">Build & Testing</p>
+        <div class="project-text">
+          <p>
+            Fabricated and assembled the kart, iterating on fit and clearance as
+            parts arrived. Final testing confirmed the 30 mph performance target
+            and verified all structural connections under load.
+          </p>
+        </div>
+
+        <div class="photo-placeholder">
+          <span class="photo-icon">📷</span>
+          <span>Add your photo here — assets/images/go-kart-1.jpg</span>
+        </div>
+        <div class="photo-placeholder">
+          <span class="photo-icon">📷</span>
+          <span>Add your photo here — assets/images/go-kart-2.jpg</span>
+        </div>
+      </div>
+
+      <div class="project-sidebar">
+        <p class="project-section-title">Details</p>
+        <div class="detail-list">
+          <div class="detail-item">
+            <strong>Timeline</strong>Sep 2023 — Apr 2024
+          </div>
+          <div class="detail-item"><strong>Team Size</strong>2 people</div>
+          <div class="detail-item"><strong>Top Speed</strong>30 mph</div>
+          <div class="detail-item">
+            <strong>Weight Target</strong>Under 200 lbs
+          </div>
+          <div class="detail-item"><strong>Budget</strong>Under $1,000</div>
+          <div class="detail-item"><strong>Suppliers</strong>5+</div>
+        </div>
+
+        <p class="project-section-title">Skills Used</p>
+        <div class="sidebar-tags">
+          <span class="sidebar-tag">Onshape</span>
+          <span class="sidebar-tag">Frame Design</span>
+          <span class="sidebar-tag">Steering Geometry</span>
+          <span class="sidebar-tag">Drive Systems</span>
+          <span class="sidebar-tag">Sourcing</span>
+          <span class="sidebar-tag">Budget Mgmt.</span>
+          <span class="sidebar-tag">Fabrication</span>
+        </div>
+      </div>
     </div>
-    <div class="photo-placeholder">
-      <span class="photo-icon">📷</span>
-      <span>Add your photo here — assets/images/go-kart-2.jpg</span>
-    </div>
 
-  </div>
+    <a href="fpv-drone.html" class="next-project">
+      <div>
+        <p class="next-label">Next Project</p>
+        <p class="next-title">FPV Drone Program</p>
+      </div>
+      <span class="next-arrow">→</span>
+    </a>
 
-  <div class="project-sidebar">
-    <p class="project-section-title">Details</p>
-    <div class="detail-list">
-      <div class="detail-item"><strong>Timeline</strong>Sep 2023 — Apr 2024</div>
-      <div class="detail-item"><strong>Team Size</strong>2 people</div>
-      <div class="detail-item"><strong>Top Speed</strong>30 mph</div>
-      <div class="detail-item"><strong>Weight Target</strong>Under 200 lbs</div>
-      <div class="detail-item"><strong>Budget</strong>Under $1,000</div>
-      <div class="detail-item"><strong>Suppliers</strong>5+</div>
-    </div>
+    <footer>
+      <p>© 2025 Evan Stratemeyer · Mechanical Engineering</p>
+      <p>Boston University · College of Engineering</p>
+    </footer>
 
-    <p class="project-section-title">Skills Used</p>
-    <div class="sidebar-tags">
-      <span class="sidebar-tag">Onshape</span>
-      <span class="sidebar-tag">Frame Design</span>
-      <span class="sidebar-tag">Steering Geometry</span>
-      <span class="sidebar-tag">Drive Systems</span>
-      <span class="sidebar-tag">Sourcing</span>
-      <span class="sidebar-tag">Budget Mgmt.</span>
-      <span class="sidebar-tag">Fabrication</span>
-    </div>
-  </div>
-</div>
-
-<a href="fpv-drone.html" class="next-project">
-  <div>
-    <p class="next-label">Next Project</p>
-    <p class="next-title">FPV Drone Program</p>
-  </div>
-  <span class="next-arrow">→</span>
-</a>
-
-<footer>
-  <p>© 2025 Evan Stratemeyer · Mechanical Engineering</p>
-  <p>Boston University · College of Engineering</p>
-</footer>
-
-<script src="../js/main.js"></script>
-</body>
+    <script src="../js/main.js"></script>
+  </body>
 </html>
