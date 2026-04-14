@@ -2,7 +2,7 @@
    EVAN STRATEMEYER — Portfolio Styles
    ========================================= */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap");
 
 /* -----------------------------------------
    CSS VARIABLES
@@ -11,17 +11,19 @@
   --bg: #f6f4ef;
   --surface: #fbfaf7;
   --border: rgba(15, 23, 42, 0.12);
-  --accent: #2f8f6a; /* sage green */
-  --accent2: #45b08a; /* brighter highlight */
+  --accent: #2f8f6a;       /* sage green */
   --accent-rgb: 47, 143, 106;
+  --amber: #c97b3a;        /* warm amber */
+  --amber-rgb: 201, 123, 58;
+  --indigo: #5567a0;       /* muted indigo */
+  --indigo-rgb: 85, 103, 160;
   --text: #0b1220;
   --muted: rgba(15, 23, 42, 0.62);
   --mono:
-    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+    "DM Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   --sans:
-    "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* -----------------------------------------
@@ -54,10 +56,40 @@ body {
   gap: 3rem;
   padding: 0 3rem;
   overflow: hidden;
+  position: relative;
+}
+
+/* Abstract background blobs */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  border-radius: 62% 38% 58% 42% / 44% 56% 44% 56%;
+  background: radial-gradient(ellipse at center, rgba(var(--accent-rgb), 0.1) 0%, transparent 68%);
+  top: -80px;
+  right: 80px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 44% 56% 38% 62% / 58% 42% 58% 42%;
+  background: radial-gradient(ellipse at center, rgba(var(--amber-rgb), 0.09) 0%, transparent 68%);
+  bottom: 40px;
+  left: -60px;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero-content {
   max-width: 900px;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-kicker {
@@ -101,6 +133,8 @@ body {
   aspect-ratio: 1 / 1;
   border-radius: 28px;
   border: 1px solid var(--border);
+  position: relative;
+  z-index: 1;
   background: linear-gradient(
     180deg,
     rgba(var(--accent-rgb), 0.08),
@@ -218,6 +252,8 @@ section {
   background: var(--surface);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+  background-image: radial-gradient(rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
 }
 
 .section-header {
@@ -233,6 +269,11 @@ section {
   color: var(--accent);
   letter-spacing: 0.15em;
 }
+
+/* Per-section accent colors */
+#projects .section-num   { color: var(--amber); }
+#experience .section-num { color: var(--indigo); }
+#contact .section-num    { color: var(--amber); }
 
 .section-title {
   font-size: 2.8rem;
@@ -270,8 +311,8 @@ section {
 .about-callout {
   margin-top: 1.25rem;
   padding: 1rem 1.25rem;
-  border: 1px solid rgba(var(--accent-rgb), 0.22);
-  background: rgba(var(--accent-rgb), 0.06);
+  border: 1px solid rgba(var(--amber-rgb), 0.28);
+  background: rgba(var(--amber-rgb), 0.07);
   border-radius: 16px;
   color: var(--text);
 }
@@ -411,18 +452,15 @@ section {
 .stat:last-child {
   border-right: none;
 }
-.stat:nth-child(1) {
-  animation-delay: 0.2s;
-}
-.stat:nth-child(2) {
-  animation-delay: 0.35s;
-}
-.stat:nth-child(3) {
-  animation-delay: 0.5s;
-}
-.stat:nth-child(4) {
-  animation-delay: 0.65s;
-}
+.stat:nth-child(1) { animation-delay: 0.2s; }
+.stat:nth-child(2) { animation-delay: 0.35s; }
+.stat:nth-child(3) { animation-delay: 0.5s; }
+.stat:nth-child(4) { animation-delay: 0.65s; }
+
+/* Alternating stat number colors */
+.stat:nth-child(2) .stat-num { color: var(--amber); }
+.stat:nth-child(3) .stat-num { color: var(--indigo); }
+.stat:nth-child(4) .stat-num { color: var(--amber); }
 
 .stat-num {
   font-size: 2.2rem;
@@ -705,7 +743,7 @@ section {
 .exp-org {
   font-family: var(--mono);
   font-size: 0.75rem;
-  color: var(--accent);
+  color: var(--indigo);
   margin-bottom: 0.8rem;
   letter-spacing: 0.05em;
 }
