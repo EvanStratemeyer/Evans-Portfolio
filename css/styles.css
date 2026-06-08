@@ -643,63 +643,6 @@ section {
 }
 
 /* -----------------------------------------
-   SKILLS
------------------------------------------ */
-.skills-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-}
-
-.skill-category-title {
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  color: var(--accent);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-}
-
-.skill-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-.skill-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.skill-name {
-  font-family: var(--mono);
-  font-size: 0.8rem;
-  color: var(--text);
-  width: 140px;
-  flex-shrink: 0;
-}
-
-.skill-bar-bg {
-  flex: 1;
-  height: 2px;
-  background: var(--border);
-  position: relative;
-  overflow: hidden;
-}
-
-.skill-bar-fill {
-  height: 100%;
-  background: var(--accent);
-  width: 0;
-  transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.skill-bar-fill.animate {
-  width: var(--fill);
-}
-
-/* -----------------------------------------
    EXPERIENCE
 ----------------------------------------- */
 .exp-list {
@@ -1139,9 +1082,6 @@ footer p {
   .about-layout {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-  }
-  .skills-layout {
-    grid-template-columns: 1fr;
   }
   .exp-item {
     grid-template-columns: 1fr;
