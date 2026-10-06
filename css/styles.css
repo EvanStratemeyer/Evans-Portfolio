@@ -284,32 +284,32 @@ section {
 /* -----------------------------------------
    ABOUT
 ----------------------------------------- */
+/* Lede spans the top, detail paragraphs sit side by side, callout spans the bottom */
 .about-layout {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 3rem;
   align-items: start;
 }
 
 .about-lede {
-  font-size: 1.05rem;
+  grid-column: 1 / -1;
+  font-size: 1.15rem;
   color: var(--text);
   line-height: 1.8;
-  max-width: 52ch;
+  max-width: 68ch;
 }
 
 .about-details {
+  display: contents;
   font-size: 0.95rem;
   color: var(--muted);
   line-height: 1.9;
 }
 
-.about-details p {
-  margin-bottom: 1rem;
-}
-
 .about-callout {
-  margin-top: 1.25rem;
+  grid-column: 1 / -1;
+  justify-self: start;
   padding: 1rem 1.25rem;
   border: 1px solid rgba(var(--amber-rgb), 0.28);
   background: rgba(var(--amber-rgb), 0.07);
